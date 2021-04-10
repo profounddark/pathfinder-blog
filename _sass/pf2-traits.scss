@@ -1,0 +1,45 @@
+ul.pathfinder-traits {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.pathfinder-traits li {
+    margin: 0;
+    font-family: "ff-good-web-pro-condensed", "Open Sans Condensed", sans-serif !important;
+    display: inline-block;
+    padding: 0.25rem 0.5rem 0.1rem 0.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border-width: 0.15rem;
+    border-style: solid;
+    border-right-width: 0.1rem;
+    border-left-width: 0.1rem;
+    text-align: center;
+    font-kerning: none;
+    background-color: #5d0000;
+    color: #fff;
+    border-color: #d8c384;
+  }
+  
+  .pathfinder-traits .trait-uncommon {
+      background-color: #98503c;
+  }
+  
+  .pathfinder-traits .trait-rare {
+      background-color: #002564;
+  }
+  
+  .pathfinder-traits .trait-unique {
+      background-color: #54166d;
+  }
+  
+  .pathfinder-traits .trait-align {
+      background-color: #566193;
+  }
+  
+  .pathfinder-traits .trait-size {
+      background-color: #3a7a58;
+  }

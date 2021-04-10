@@ -1,0 +1,9 @@
+---
+# front matter tells Jekyll to process Liquid
+layout: default
+title: Home Page
+my-number: 5
+---
+
+<h1>{{ "Hello World!" | downcase }}</h1>
+<p>Today's lucky number is {{ page.my-number }}</p>

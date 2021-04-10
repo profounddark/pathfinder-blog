@@ -1,0 +1,14 @@
+<ul class="pathfinder-traits">
+    {%- assign traits = include.traits | split: ", " -%}
+    {%- for item in traits -%}
+    <li 
+        {% if item == "uncommon" or item == "rare" or item == "unique" %}
+        class="trait-{{ item }}"
+        {% elsif item == "lg" or item == "ln" or item == "le" or item == "ng" or item == "n" or item == "ne" or item == "cg" or item == "cn" or item == "ce" %}
+        class="trait-align"
+        {% elsif item == "tiny" or item == "small" or item == "medium" or item == "large" or item == "huge" or item == "gargantuan" %}
+        class="trait-size"
+        {% endif %}
+    >{{ item }}</li>
+    {%- endfor -%}
+</ul>

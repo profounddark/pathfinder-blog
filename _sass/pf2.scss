@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Pathfinder-Font";
+  src: url("/assets/fonts/Pathfinder2eActions.ttf");
+}
+
+.pf2-symbol {
+  font-family: "Pathfinder-Font";
+  font-size: 120%;
+  vertical-align: 10%;
+}
+
+.pathfinder-back {
+  background-color: #EEEEEE;
+  background-image: url("/assets/images/background.jpg");
+}
+
+.pathfinder-block {
+
+  padding: 2rem 1rem;
+}
+
+.pathfinder-block hr {
+  margin: 0.25rem 0 0.25rem 0;
+}
+
+.pathfinder-block h3 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding-top: 0.1rem;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+}
+
+.pathfinder-block .title-line {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.pathfinder-block ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.pathfinder-block p {
+  margin: 0.25rem 0 0 0;
+  padding: 0;
+}
+
+.pathfinder-block .content {
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.pathfinder-block action {
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.pathfinder-block spell {
+  font-style: italic;
+}
