@@ -2,10 +2,36 @@ $font-stack:    Trebuchet MS, Ariel, sans-serif;
 
 body {
     font: 100% $font-stack;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+nav a {
+    padding: 1rem 2rem;
+    color: white;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
 }
 
 .current {    
-    color: green;
+    color: lightgreen;
+}
+
+.current:hover {
+    background-color: lightgreen;
+    color: black;
 }
 
 ul {
@@ -19,14 +45,22 @@ ul {
     margin: 0 auto;
 }
 
+.mainframe a {
+    color: black;
+}
+
+.mainframe a:hover {
+    color: lightgreen;
+    background-color:black;
+}
+
 .post-summary h3 {
     font-size: 1.2rem;
     margin: .5rem 0 0 0;
     text-transform: uppercase;
 }
-.post-summary h3::first-letter {
-    font-size:1.6rem;
-}
+
+
 .post-summary p {
     margin: .25rem .25rem .5rem 1.5rem;
 }
