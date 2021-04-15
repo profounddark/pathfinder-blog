@@ -1,0 +1,48 @@
+<div class="pathfinder-block">
+    <div class="title-line">
+        <h3>{{ include.name | default: "Item Name" }}</h3>
+        <h3>Item {{ include.level | default: 1 }}</h3>
+    </div>
+    <hr>
+
+    {% include pf2-traits.html traits=include.traits %}
+
+    {% if include.price %} 
+    <p><strong>Price</strong> {{ include.price }}</p>
+    {% endif %}
+    
+    <p>
+    {% if include.usage %}
+    <strong>Usage</strong> {{ include.usage }};
+    {% endif %}
+    <strong>Bulk</strong> {{include.bulk | default: "L"}}
+    </p>
+
+    <p>
+    {% if include.activate %}
+    <strong>Activate</strong> {{ include.activate | replace: ":a:", "<span class='pf2-symbol'>1</span>" | replace: ":aa:", "<span class='pf2-symbol'>2</span>" | replace: ":f:", "<span class='pf2-symbol'>f</span>" }}
+    {% endif %}
+    </p>
+
+    <hr>
+
+    {%- assign content-blocks = include.content | split: "/n" -%}
+    <div class="content">
+        {%- for block in content-blocks -%}
+        <p>{{ block | replace: ":a:", "<span class='pf2-symbol'>1</span>" | replace: ":r:", "<span class='pf2-symbol'>r</span>"}}</p>
+        {%- endfor -%}
+    </div>
+
+    {% if include.versions %}
+    {% assign items = include.versions | split: " | " %}
+    {% for item in items %}
+        {% assign attribs = item | split: "," %}
+        <hr>
+        <p>
+        <strong>Type</strong> {{ attribs[0] }}; <strong>Level</strong> {{ attribs[1] }}; <strong>Price</strong> {{ attribs[2] }}
+    </p>
+    <p>{{ attribs[3] }} </p>
+    {% endfor %}
+    {% endif %}
+
+</div>

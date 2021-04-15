@@ -6,16 +6,17 @@
 .pf2-symbol {
   font-family: "Pathfinder-Font";
   font-size: 120%;
-  vertical-align: 10%;
+  vertical-align: 0%;
 }
 
 .pathfinder-back {
   background-color: #EEEEEE;
   background-image: url("/assets/images/background.jpg");
+  border: 0.1rem solid black;
 }
 
 .pathfinder-block {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .pathfinder-block hr {
