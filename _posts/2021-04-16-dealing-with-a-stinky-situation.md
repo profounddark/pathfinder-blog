@@ -4,15 +4,17 @@ author: andrew
 excerpt: "A simple alchemical item designed to supplement characters in situations with odorous monsters."
 ---
 
-My first experience with Pathfinder 2E was the [Extinction Curse Adventure Path](https://paizo.com/store/pathfinder/adventures/adventurePath/extinctioncurse), a story where a travelling carnival or circus inadvertantly gets involved with a series of important events. One thing that's not apparent until you get near the end of the first book is that the primary enemy of the entire adventure path is [Xulgath](https://2e.aonprd.com/MonsterFamilies.aspx?ID=102).
+My first experience with Pathfinder 2E was the [Extinction Curse Adventure Path](https://paizo.com/store/pathfinder/adventures/adventurePath/extinctioncurse), a story where a travelling carnival or circus inadvertantly gets involved with a series of important events. One thing that's not apparent until you get near the end of the first book is that the primary enemy of the entire adventure path is the [Xulgath](https://2e.aonprd.com/MonsterFamilies.aspx?ID=102).
 
-Xulgath are the proper name for what Dungeons & Dragons calls troglodytes. Like their counterparts in D&D (and other games), the Xulgath of Pathfinder have a distinctive, harmful olfactory based ability: **Stench**. **Stench** is an aura that requires the character entering the aura to make a Fortitude save, becoming *Sickened 1* on a failure. In an Adventure Path featuring Xulgath in some 50% of the content, it got me thinking about what the PCs could do to help mitigate the danger of the Xulgath **Stench**.
+Xulgath are the proper name for what Dungeons & Dragons calls troglodytes. Like their counterparts in D&D (and other games), the Xulgath of Pathfinder have a distinctive, harmful olfactory based ability: **Stench**. **Stench** is an aura that requires the character entering the aura to make a Fortitude save, becoming *Sickened 1* on a failure. In an Adventure Path featuring Xulgath in some 50% of the content, it got me thinking about what the PCs could do to help mitigate this problem.
 
 ## Alchemical Options
 
-While there are lots of items that grant bonuses to different saves, I wanted something that felt specific to what the characters were facing. I thought about comparable situations. What would the characters do if they were facing enemies that they knew could poison them? Use an [Antidote](https://2e.aonprd.com/Equipment.aspx?ID=80). Similarly, in a situation where disease is a regular threat, you bring along [Antiplague](https://2e.aonprd.com/Equipment.aspx?ID=81). In that regard, I wanted something that worked that way.
+There are quite a few different ways to get bonuses to saving throws in Pathfinder 2E. The most obvious solution is the armor Resilient rune, which provides a bonus to all saving throws. However, I wanted a temporary consumable item that felt specific to what the characters were facing. I thought about comparable situations. What would the characters do if they were facing enemies that they knew could poison them? Use an [Antidote](https://2e.aonprd.com/Equipment.aspx?ID=80). Similarly, in a situation where disease is a regular threat, you bring along [Antiplague](https://2e.aonprd.com/Equipment.aspx?ID=81). In that regard, I wanted a consumable item that worked that way.
 
 With that in mind, I wanted to use the **Antidote** and **Antiplague** but gave it a bonus that applied to this particular threat. The **Stench** ability itself has the *olfactory* trait, so it made sense to apply it to that. I also imagined it would be useful against other breathable threats, like poison gas, so I also had the bonus apply to effects with the *inhaled* trait.
+
+The resulting item is pretty basic. It's really just the **Antidote** elixir but with the target effects changed. As far as "homebrew" goes, it doesn't get any simpler than this. However, as simple as it is, it has become a somewhat regular use item for the characters in my *Extinction Curse*.
 
 ## New Alchemical Elixir
 
