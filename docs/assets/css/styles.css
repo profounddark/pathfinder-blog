@@ -1,0 +1,67 @@
+body { font: 100% Trebuchet MS, Ariel, sans-serif; margin: 0; }
+
+nav { background-color: black; padding: 0rem; margin: 0rem; display: flex; flex-flow: row nowrap; justify-content: center; }
+
+nav a { padding: 1rem 2rem; color: white; }
+
+nav a:hover { background-color: white; color: black; }
+
+.current { color: lightgreen; }
+
+.current:hover { background-color: lightgreen; color: black; }
+
+ul { list-style-type: none; padding: 0; }
+
+.mainframe { max-width: 800px; margin: 0 auto 2.5rem auto; }
+
+.mainframe a { color: black; }
+
+.mainframe a:hover { color: lightgreen; background-color: black; }
+
+.post-summary h3 { font-size: 1.2rem; margin: .5rem 0 0 0; text-transform: uppercase; }
+
+.post-summary p { margin: .25rem .25rem .5rem 1.5rem; }
+
+a { text-decoration: none; }
+
+h1 { text-align: center; }
+
+@font-face { font-family: "Pathfinder-Font"; src: url("/assets/fonts/Pathfinder2eActions.ttf"); }
+
+.pf2-symbol { font-family: "Pathfinder-Font"; font-size: 120%; vertical-align: 0%; }
+
+.pathfinder-back { background-color: #EEEEEE; background-image: url("/assets/images/background.jpg"); border: 0.1rem solid black; }
+
+.pathfinder-block { padding: 1rem 1rem; }
+
+.pathfinder-block hr { margin: 0.25rem 0 0.25rem 0; }
+
+.pathfinder-block h3 { text-transform: uppercase; font-size: 1.4rem; padding-top: 0.1rem; font-weight: bold; margin: 0; display: inline-block; }
+
+.pathfinder-block .title-line { display: flex; flex-flow: row nowrap; justify-content: space-between; }
+
+.pathfinder-block ul { list-style-type: none; display: inline-block; margin: 0; padding: 0; }
+
+.pathfinder-block p { margin: 0.25rem 0 0 0; padding: 0; }
+
+.pathfinder-block .content { margin-top: 0.5rem; padding: 0; }
+
+action { font-weight: bold; font-style: oblique; }
+
+spell { font-style: italic; }
+
+ul.pathfinder-traits { list-style-type: none; display: inline-block; margin: 0; padding: 0; }
+
+ul.pathfinder-traits li { margin: 0; font-family: "ff-good-web-pro-condensed", "Open Sans Condensed", sans-serif !important; display: inline-block; padding: 0.25rem 0.5rem 0.1rem 0.5rem; line-height: 1; text-transform: uppercase; font-size: 0.8rem; border-width: 0.15rem; border-style: solid; border-right-width: 0.1rem; border-left-width: 0.1rem; text-align: center; font-kerning: none; background-color: #5d0000; color: #fff; border-color: #d8c384; }
+
+.pathfinder-traits .trait-uncommon { background-color: #98503c; }
+
+.pathfinder-traits .trait-rare { background-color: #002564; }
+
+.pathfinder-traits .trait-unique { background-color: #54166d; }
+
+.pathfinder-traits .trait-align { background-color: #566193; }
+
+.pathfinder-traits .trait-size { background-color: #3a7a58; }
+
+/*# sourceMappingURL=styles.css.map */
