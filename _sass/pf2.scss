@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Pathfinder-Font";
-  src: url("/assets/fonts/Pathfinder2eActions.ttf");
+  src: url("../fonts/Pathfinder2eActions.ttf");
 }
 
 .pf2-symbol {
@@ -11,7 +11,7 @@
 
 .pathfinder-back {
   background-color: #EEEEEE;
-  background-image: url("/assets/images/background.jpg");
+  background-image: url("../images/background.jpg");
   border: 0.1rem solid black;
 }
 
