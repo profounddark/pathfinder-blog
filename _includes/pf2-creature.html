@@ -1,95 +1,83 @@
 <div class="pathfinder-block">
+    {% assign creature = include.creature %}
     <div class="title-line">
-        <h3>{{ include.name | default: "Creature Name" }}</h3>
-        <h3>{{ include.creature-type | default: "Creature" }} {{ include.level | default: 1 }}</h3>
+        <h3>{{ creature.name | default: "Creature Name" }}</h3>
+        <h3>{{ creature.creature-type | default: "Creature" }} {{ creature.level | default: 1 }}</h3>
     </div>
     <hr>
 
-    {% include pf2-traits.html traits=include.traits %}
-    
-    <p><strong>Perception</strong> {{ include.perception }}
-        {%- if include.senses -%}
-        ; {{ include.senses }}
+    {% include pf2-traits.html traits=creature.traits %}
+
+    <p><strong>Perception</strong> {{ creature.perception }}
+        {%- if creature.senses -%}
+        ; {{ creature.senses }}
         {%- endif -%}
     </p>
 
-    {% if include.skills %}
-        <p><strong>Skills</strong> {{ include.skills }}</p>
+    {% if creature.skills %}
+    <p><strong>Skills</strong> {{ creature.skills }}</p>
     {% endif %}
 
     <p>
-        <strong>Str</strong> {{ include.str | default: "+0" }},
-        <strong>Dex</strong> {{ include.dex | default: "+0" }},
-        <strong>Con</strong> {{ include.con | default: "+0" }},
-        <strong>Int</strong> {{ include.int | default: "+0" }},
-        <strong>Wis</strong> {{ include.wis | default: "+0" }},
-        <strong>Cha</strong> {{ include.cha | default: "+0" }}
+        <strong>Str</strong> {{ creature.attributes.str | default: "+0" }},
+        <strong>Dex</strong> {{ creature.attributes.dex | default: "+0" }},
+        <strong>Con</strong> {{ creature.attributes.con | default: "+0" }},
+        <strong>Int</strong> {{ creature.attributes.int | default: "+0" }},
+        <strong>Wis</strong> {{ creature.attributes.wis | default: "+0" }},
+        <strong>Cha</strong> {{ creature.attributes.cha | default: "+0" }}
     </p>
 
     <hr>
 
     <p>
-        <strong>AC</strong> {{ include.ac | default: "10" }};
-        <strong>Fort</strong> {{ include.fort | default: "+0" }},
-        <strong>Ref</strong> {{ include.ref | default: "+0" }},
-        <strong>Will</strong> {{ include.will | default: "+0" }}
+        <strong>AC</strong> {{ creature.ac | default: "10" }};
+        <strong>Fort</strong> {{ creature.fort | default: "+0" }},
+        <strong>Ref</strong> {{ creature.ref | default: "+0" }},
+        <strong>Will</strong> {{ creature.will | default: "+0" }}
     </p>
 
     <p>
-        <strong>HP</strong> {{ include.hp | default: "12" }}
+        <strong>HP</strong> {{ creature.hp | default: "12" }}
     </p>
 
     <hr>
 
     <p>
-        <strong>Speed</strong> {{ include.speed | default: "25 feet" }}
-        {%- if include.speed-other -%}
-        , {{ include.speed-other }}
+        <strong>Speed</strong> {{ creature.speed | default: "25 feet" }}
+        {%- if creature.speed-other -%}
+        , {{ creature.speed-other }}
         {%- endif -%}
     </p>
 
-    {% if include.melee %}
-    {% assign melee-attacks = include.melee | split: " | " %}
-    {% for attack-info in melee-attacks %}
-        {% assign attack = attack-info | split: ", " %}
-        <p>
-            <strong>Melee</strong> <span class='pf2-symbol'>1</span> {{ attack[0] }},
-            {% if attack[1].size > 0 %}
-                {{ attack[1] | size }}
-                <strong>Damage</strong> {{ attack[1] }}
-            {% endif %}
-            {% if attack[2].size > 0 %}
-                <strong>Effect</strong> {{ attack[2] }}
-            {% endif %}
-        </p>
+    {% for strike in creature.melee %}
+    <p>
+        <strong>Melee</strong> <span class='pf2-symbol'>1</span> {{ strike.attack }},
+        {% if strike.damage %}
+        <strong>Damage</strong> {{ strike.damage }}
+        {% endif %}
+        {% if strike.effect %}
+        <strong>Effect</strong> {{ strike.effect }}
+        {% endif %}
+    </p>
     {% endfor %}
-    {% endif %}
 
-    {% if include.ranged %}
-    {% assign ranged-attacks = include.ranged | split: " | " %}
-    {% for attack-info in ranged-attacks %}
-        {% assign attack = attack-info | split: ", " %}
-        <p>
-            <strong>Ranged</strong> <span class='pf2-symbol'>1</span> {{ attack[0] }},
-            {% if attack[1].size > 0 %}
-                {{ attack[1] | size }}
-                <strong>Damage</strong> {{ attack[1] }}
-            {% endif %}
-            {% if attack[2].size > 0 %}
-                <strong>Effect</strong> {{ attack[2] }}
-            {% endif %}
-        </p>
+    {% for strike in creature.ranged %}
+    <p>
+        <strong>Ranged</strong> <span class='pf2-symbol'>1</span> {{ strike.attack }},
+        {% if strike.damage %}
+        <strong>Damage</strong> {{ strike.damage }}
+        {% endif %}
+        {% if strike.effect %}
+        <strong>Effect</strong> {{ strike.effect }}
+        {% endif %}
+    </p>
     {% endfor %}
-    {% endif %}
 
-    {% if include.offense %}
-    {% assign offense-abilities = include.offense | split: " | " %}
-    {% for ability-info in offense-abilities %}
-        {% assign ability = ability-info | split: ", " %}
+    {% for ability in creature.offense %}
         <p>
-            <strong>{{ ability[0] }}</strong> {{ ability[1] }}
+            <strong>{% include pf2-text.html text=ability.name %}</strong>
+            {{ ability.effect }}
         </p>
-        
     {% endfor %}
-    {% endif %}
+
 </div>
