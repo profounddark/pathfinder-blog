@@ -13,7 +13,11 @@
         ; {{ creature.senses }}
         {%- endif -%}
     </p>
-
+    
+    {% if creature.languages %}
+    <p><strong>Languages</strong> {{ creature.languages }}</p>
+    {% endif %}
+    
     {% if creature.skills %}
     <p><strong>Skills</strong> {{ creature.skills }}</p>
     {% endif %}
@@ -27,6 +31,14 @@
         <strong>Cha</strong> {{ creature.attributes.cha | default: "+0" }}
     </p>
 
+    {% for ability in creature.passive %}
+    <p>
+        <strong>{% include pf2-text.html text=ability.name %}</strong>
+        {{ ability.traits }}
+        {{ ability.effect }}
+    </p>
+    {% endfor %}
+
     <hr>
 
     <p>
@@ -38,7 +50,18 @@
 
     <p>
         <strong>HP</strong> {{ creature.hp | default: "12" }}
+        {%- if creature.weakness -%}
+        ; <strong>Weaknesses</strong> {{ creature.weakness }}
+        {%- endif -%}
     </p>
+
+    {% for ability in creature.defense %}
+    <p>
+        <strong>{% include pf2-text.html text=ability.name %}</strong>
+        {{ ability.traits }}
+        {{ ability.effect }}
+    </p>
+    {% endfor %}
 
     <hr>
 
@@ -76,6 +99,7 @@
     {% for ability in creature.offense %}
         <p>
             <strong>{% include pf2-text.html text=ability.name %}</strong>
+            {{ ability.traits }}
             {{ ability.effect }}
         </p>
     {% endfor %}
