@@ -1,0 +1,6 @@
+{% assign number = include.bonus | default: 0 %}
+{% if number < 0 %}
+{{- number -}}
+{% elsif number >= 0 %}
++{{- number -}}
+{% endif %}

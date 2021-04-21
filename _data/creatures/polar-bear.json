@@ -1,0 +1,46 @@
+{
+    "name": "Polar Bear",
+    "level": 5,
+    "traits": "n, large, animal",
+    "perception": "+12",
+    "sense": "low-light vision, scent (imprecise) 60 feet",
+    "skills": "Athletics +14, Stealth +10 (+14 in icy or snowy areas), Survival +10",
+    "attributes": {
+        "str": 5,
+        "dex": 1,
+        "con": 5,
+        "int": -4,
+        "wis": 1,
+        "cha": -1
+    },
+    "ac": 22,
+    "saves": {
+        "fort": 14,
+        "ref": 10,
+        "will": 10
+    },
+    "hp": 73,
+    "speed": "35 feet",
+    "speed-other": "swim 15 feet",
+    "melee": [
+        {
+            "attack": "jaws +15",
+            "damage": "2d8+7 piercing"
+        },
+        {
+            "attack": "claws +15",
+            "traits": "agile",
+            "damage": "2d6+7 slashing plus Grab"
+        }
+    ],
+    "offense": [
+        {
+            "name": "Sneak Attack",
+            "effect": "The polar bear's Strikes deal an additional 1d6 precision damage to flat-footed creatures."
+        },
+        {
+            "name": "Mauler",
+            "effect": "The polar bear gains a +3 circumstance bonus to damage rolls against reatures it has grabbed."
+        }
+    ]
+}

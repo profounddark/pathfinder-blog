@@ -1,7 +1,8 @@
 <ul class="pathfinder-traits">
     {%- assign traits = include.traits | split: ", " -%}
-    {%- for item in traits -%}
+    {%- for item-orig in traits -%}
     <li 
+        {% assign item = item-orig | downcase %}
         {% if item == "uncommon" or item == "rare" or item == "unique" %}
         class="trait-{{ item }}"
         {% elsif item == "lg" or item == "ln" or item == "le" or item == "ng" or item == "n" or item == "ne" or item == "cg" or item == "cn" or item == "ce" %}
