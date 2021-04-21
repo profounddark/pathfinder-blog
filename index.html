@@ -7,7 +7,7 @@ my-number: 5
 <h1>The Book of Profound Darkness</h1>
 <p>This is my work-in-progress blog in which I write a bit about TTRPGs, but mostly the Pathfinder 2E role-playing game.</p>
 <h2>Most Recent Posts</h2>
-<ul>
+<ul class="post-list">
     {% for post in site.posts %}
         <li class="post-summary">
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }} | {{ post.date | date_to_string }}</a></h3>
