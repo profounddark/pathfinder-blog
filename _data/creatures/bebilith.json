@@ -1,7 +1,12 @@
 {
     "name": "Bebilith",
     "level": 10,
-    "traits": "ce, huge, beast, fiend",
+    "traits": [
+        "ce",
+        "huge",
+        "beast",
+        "fiend"
+    ],
     "perception": "+21",
     "senses": "darkvision, scent demons 60 feet, scent (imprecise) 30 feet",
     "languages": "Abyssal (can't speak any language); telepathy 100 feet",

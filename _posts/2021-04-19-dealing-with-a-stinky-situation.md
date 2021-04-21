@@ -19,5 +19,5 @@ The resulting item is pretty basic. It's really just the **Antidote** elixir but
 ## New Alchemical Elixir
 
 <div class="pathfinder-back">
-{% include pf2-item.html item=site.data.items.charcoal-philter %}
+    {% include pf2-item.html item=site.data.items.charcoal-philter %}
 </div>

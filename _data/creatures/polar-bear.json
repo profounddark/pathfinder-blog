@@ -1,7 +1,11 @@
 {
     "name": "Polar Bear",
     "level": 5,
-    "traits": "n, large, animal",
+    "traits": [
+        "n",
+        "large",
+        "animal"
+    ],
     "perception": "+12",
     "sense": "low-light vision, scent (imprecise) 60 feet",
     "skills": "Athletics +14, Stealth +10 (+14 in icy or snowy areas), Survival +10",

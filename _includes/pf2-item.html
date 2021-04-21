@@ -21,8 +21,7 @@
 
     <p>
         {% if item.activate %}
-        <strong>Activate</strong> {{ item.activate | replace: ":a:", "<span class='pf2-symbol'>1</span>" | replace:
-        ":aa:", "<span class='pf2-symbol'>2</span>" | replace: ":f:", "<span class='pf2-symbol'>f</span>" }}
+        <strong>Activate</strong> {% include parse-symbols.html text=item.activate %}
         {% endif %}
     </p>
 

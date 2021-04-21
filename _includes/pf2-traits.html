@@ -1,15 +1,14 @@
 <ul class="pathfinder-traits">
-    {%- assign traits = include.traits | split: ", " -%}
-    {%- for item-orig in traits -%}
+    {%- for trait-orig in include.traits -%}
     <li 
-        {% assign item = item-orig | downcase %}
-        {% if item == "uncommon" or item == "rare" or item == "unique" %}
-        class="trait-{{ item }}"
-        {% elsif item == "lg" or item == "ln" or item == "le" or item == "ng" or item == "n" or item == "ne" or item == "cg" or item == "cn" or item == "ce" %}
+        {% assign trait = trait-orig | downcase %}
+        {% if trait == "uncommon" or trait == "rare" or trait == "unique" %}
+        class="trait-{{ trait }}"
+        {% elsif trait == "lg" or trait == "ln" or trait == "le" or trait == "ng" or trait == "n" or trait == "ne" or trait == "cg" or trait == "cn" or trait == "ce" %}
         class="trait-align"
-        {% elsif item == "tiny" or item == "small" or item == "medium" or item == "large" or item == "huge" or item == "gargantuan" %}
+        {% elsif trait == "tiny" or trait == "small" or trait == "medium" or trait == "large" or trait == "huge" or trait == "gargantuan" %}
         class="trait-size"
         {% endif %}
-    >{{ item }}</li>
+    >{{ trait }}</li>
     {%- endfor -%}
 </ul>
