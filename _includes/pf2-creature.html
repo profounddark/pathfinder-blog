@@ -23,17 +23,17 @@
     {% endif %}
 
     <p>
-        <strong>Str</strong> {{ creature.attributes.str | default: "+0" }},
-        <strong>Dex</strong> {{ creature.attributes.dex | default: "+0" }},
-        <strong>Con</strong> {{ creature.attributes.con | default: "+0" }},
-        <strong>Int</strong> {{ creature.attributes.int | default: "+0" }},
-        <strong>Wis</strong> {{ creature.attributes.wis | default: "+0" }},
-        <strong>Cha</strong> {{ creature.attributes.cha | default: "+0" }}
+        <strong>Str</strong> {% include parse-bonus.html bonus=creature.attributes.str %},
+        <strong>Dex</strong> {% include parse-bonus.html bonus=creature.attributes.dex %},
+        <strong>Con</strong> {% include parse-bonus.html bonus=creature.attributes.con %},
+        <strong>Int</strong> {% include parse-bonus.html bonus=creature.attributes.int %},
+        <strong>Wis</strong> {% include parse-bonus.html bonus=creature.attributes.wis %},
+        <strong>Cha</strong> {% include parse-bonus.html bonus=creature.attributes.cha %}
     </p>
 
     {% for ability in creature.passive %}
     <p>
-        <strong>{% include pf2-text.html text=ability.name %}</strong>
+        <strong>{% include parse-symbols.html text=ability.name %}</strong>
         {{ ability.traits }}
         {{ ability.effect }}
     </p>
@@ -43,9 +43,9 @@
 
     <p>
         <strong>AC</strong> {{ creature.ac | default: "10" }};
-        <strong>Fort</strong> {{ creature.fort | default: "+0" }},
-        <strong>Ref</strong> {{ creature.ref | default: "+0" }},
-        <strong>Will</strong> {{ creature.will | default: "+0" }}
+        <strong>Fort</strong> {% include parse-bonus.html bonus=creature.saves.fort %},
+        <strong>Ref</strong> {% include parse-bonus.html bonus=creature.saves.ref %},
+        <strong>Will</strong> {% include parse-bonus.html bonus=creature.saves.will %}
     </p>
 
     <p>
@@ -57,7 +57,7 @@
 
     {% for ability in creature.defense %}
     <p>
-        <strong>{% include pf2-text.html text=ability.name %}</strong>
+        <strong>{% include parse-symbols.html text=ability.name %}</strong>
         {{ ability.traits }}
         {{ ability.effect }}
     </p>
@@ -74,7 +74,10 @@
 
     {% for strike in creature.melee %}
     <p>
-        <strong>Melee</strong> <span class='pf2-symbol'>1</span> {{ strike.attack }},
+        <strong>Melee</strong> <span class='pf2-symbol'>1</span> {{ strike.attack -}}
+        {% if strike.traits %}
+        ({{ strike.traits }})
+        {%- endif -%},
         {% if strike.damage %}
         <strong>Damage</strong> {{ strike.damage }}
         {% endif %}
@@ -86,7 +89,10 @@
 
     {% for strike in creature.ranged %}
     <p>
-        <strong>Ranged</strong> <span class='pf2-symbol'>1</span> {{ strike.attack }},
+        <strong>Ranged</strong> <span class='pf2-symbol'>1</span> {{ strike.attack -}}
+        {% if strike.traits %}
+        ({{ strike.traits }})
+        {%- endif -%},
         {% if strike.damage %}
         <strong>Damage</strong> {{ strike.damage }}
         {% endif %}
@@ -98,7 +104,7 @@
 
     {% for ability in creature.offense %}
         <p>
-            <strong>{% include pf2-text.html text=ability.name %}</strong>
+            <strong>{% include parse-symbols.html text=ability.name %}</strong>
             {{ ability.traits }}
             {{ ability.effect }}
         </p>

@@ -3,16 +3,16 @@
     "level": 10,
     "traits": "ce, huge, beast, fiend",
     "perception": "+21",
-    "sense": "darkvision, scent demons 60 feet, scent (imprecise) 30 feet",
+    "senses": "darkvision, scent demons 60 feet, scent (imprecise) 30 feet",
     "languages": "Abyssal (can't speak any language); telepathy 100 feet",
     "skills": "Acrobatics +19, Athletics +23, Intimidation +21, Stealth +19",
     "attributes": {
-        "str": "+7",
-        "dex": "+3",
-        "con": "+6",
-        "int": "+3",
-        "wis": "+5",
-        "cha": "+5"
+        "str": 7,
+        "dex": 3,
+        "con": 6,
+        "int": 3,
+        "wis": 5,
+        "cha": 5
     },
     "passive": [
         {
@@ -21,10 +21,12 @@
         }
     ],
     "ac": 30,
-    "fort": "+22",
-    "ref": "+19",
-    "will": "+19",
-    "hp": "200",
+    "saves": {
+        "fort": 22,
+        "ref": 19,
+        "will": 19
+    },
+    "hp": 200,
     "weakness": "good 10",
     "defense": [
         {
@@ -35,21 +37,28 @@
     "speed-other": "climb 15 feet",
     "melee": [
         {
-            "attack": "jaws +23 (magical, reach 10 feet)",
+            "attack": "jaws +23",
+            "traits": "magical, reach 10 feet",
             "damage": "2d10+13 piercing plus Abyssal rot"
         },
         {
-            "attack": "claw +23 (agile, magical, reach 15 feet)",
+            "attack": "claw +23",
+            "traits": "agile, magical, reach 15 feet",
             "damage": "2d8+13 slashing"
         }
     ],
     "ranged": [
         {
-            "attack": "web +23 (range increment 60 feet)",
+            "attack": "web +23",
+            "traits": "range increment 60 feet",
             "effect": "dimensional tether"
         }
     ],
     "offense": [
+        {
+            "name": "Divine Innate Spells",
+            "effect": "DC 29; <strong>7th</strong> <em>plane shift</em> (self only)"
+        },
         {
             "name": "Abyssal Rot",
             "traits": "disease, necromancy",
