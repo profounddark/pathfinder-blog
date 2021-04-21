@@ -1,7 +1,7 @@
 ---
 layout: post
 author: andrew
-excerpt: "A simple alchemical item designed to supplement characters in situations with odorous monsters."
+excerpt: "Playing through the second official Adventure Path for Pathfinder 2E, I discovered that I needed a custom item to fill an obvious need that came up. Here, I present a simple alchemical item designed to supplement characters in situations with odorous monsters."
 ---
 
 My first experience with Pathfinder 2E was the [Extinction Curse Adventure Path](https://paizo.com/store/pathfinder/adventures/adventurePath/extinctioncurse), a story where a travelling circus inadvertantly gets involved with a series of very important events. One thing that's not apparent until you get near the end of the first book is that the primary enemy of the entire adventure path is the [Xulgath](https://2e.aonprd.com/MonsterFamilies.aspx?ID=102), lizard people that live deep underground that are known for smelling very bad.

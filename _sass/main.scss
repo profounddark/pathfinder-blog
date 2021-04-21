@@ -35,7 +35,8 @@ nav a:hover {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: disc;
+    list-style-position: inside;
     padding: 0;
 }
 
@@ -71,4 +72,13 @@ a {
 
 h1 {
     text-align:center;
+}
+
+img.image-right {
+    width: 50%;
+    float:right;
+}
+
+blockquote {
+    font-family:'Courier New', Courier, monospace;
 }

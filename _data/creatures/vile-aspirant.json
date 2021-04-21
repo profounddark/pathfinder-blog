@@ -3,14 +3,14 @@
     "creature-type": "Soldier",
     "level": 2,
     "traits": [
-        "ce",
+        "ne",
         "medium",
         "human",
         "humanoid"
     ],
     "perception": 6,
     "languages": "Common",
-    "skills": "Acrobatics +8, Survival +7",
+    "skills": "Athletics +8, Survival +7",
     "attributes": {
         "str": 4,
         "dex": 1,
@@ -19,13 +19,13 @@
         "wis": 2,
         "cha": 0
     },
-    "items": "trident, hide armor, wooden shield (Hardness 3, HP 12, BT 6)",
+    "items": "trident, hide armor, wooden shield",
     "passive": [
         {
             "name": "Tainted Rage :f:",
             "traits": "rage",
             "trigger": "The vile aspirant is Bloodied for the first time in the battle;",
-            "effect": "The vile aspirant enters a rage and gains 6 temporary Hit Points for 1 minute. While raging, the vile aspirant deals +2 additional damage with melee weapon and unarmed attacks, has a -1 penalty to AC, and cannot <action>Raise a Shield</action> or use actions that have the concentrate trait. The vile aspirant can still Seek while raging."
+            "effect": "The vile aspirant enters a rage and gains 6 temporary Hit Points for 1 minute. While raging, the vile aspirant deals +2 additional damage with melee weapon and unarmed attacks, has a -1 penalty to AC, and cannot <action>Raise a Shield</action> or use actions that have the concentrate trait."
         }
     ],
     "ac": 18,
@@ -38,7 +38,8 @@
     "bloodied": 16,
     "defense": [
         {
-            "name": "Shield Block :r:"
+            "name": "Shield Block :r:",
+            "description": "(Hardness 3, HP 12, BT 6)"
         }
     ],
 
