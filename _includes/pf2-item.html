@@ -1,47 +1,50 @@
 <div class="pathfinder-block">
+    {% assign item = include.item %}
     <div class="title-line">
-        <h3>{{ include.name | default: "Item Name" }}</h3>
-        <h3>Item {{ include.level | default: 1 }}</h3>
+        <h3>{{ item.name | default: "Item Name" }}</h3>
+        <h3>Item {{ item.level | default: 1 }}</h3>
     </div>
     <hr>
 
-    {% include pf2-traits.html traits=include.traits %}
+    {% include pf2-traits.html traits=item.traits %}
 
-    {% if include.price %} 
-    <p><strong>Price</strong> {{ include.price }}</p>
+    {% if item.price %}
+    <p><strong>Price</strong> {{ item.price }}</p>
     {% endif %}
-    
+
     <p>
-    {% if include.usage %}
-    <strong>Usage</strong> {{ include.usage }};
-    {% endif %}
-    <strong>Bulk</strong> {{include.bulk | default: "L"}}
+        {% if item.usage %}
+        <strong>Usage</strong> {{ item.usage }};
+        {% endif %}
+        <strong>Bulk</strong> {{ item.bulk | default: "L"}}
     </p>
 
     <p>
-    {% if include.activate %}
-    <strong>Activate</strong> {{ include.activate | replace: ":a:", "<span class='pf2-symbol'>1</span>" | replace: ":aa:", "<span class='pf2-symbol'>2</span>" | replace: ":f:", "<span class='pf2-symbol'>f</span>" }}
-    {% endif %}
+        {% if item.activate %}
+        <strong>Activate</strong> {{ item.activate | replace: ":a:", "<span class='pf2-symbol'>1</span>" | replace:
+        ":aa:", "<span class='pf2-symbol'>2</span>" | replace: ":f:", "<span class='pf2-symbol'>f</span>" }}
+        {% endif %}
     </p>
 
     <hr>
 
-    {%- assign content-blocks = include.content | split: "/n" -%}
+    {%- assign content-blocks = item.description | split: "/n" -%}
     <div class="content">
         {%- for block in content-blocks -%}
-        <p>{{ block | replace: ":a:", "<span class='pf2-symbol'>1</span>" | replace: ":r:", "<span class='pf2-symbol'>r</span>"}}</p>
+        <p>{{ block | replace: ":a:", "<span class='pf2-symbol'>1</span>" | replace: ":r:", "<span
+                class='pf2-symbol'>r</span>"}}</p>
         {%- endfor -%}
     </div>
 
-    {% if include.versions %}
-    {% assign items = include.versions | split: " | " %}
-    {% for item in items %}
-        {% assign attribs = item | split: "," %}
-        <hr>
-        <p>
-        <strong>Type</strong> {{ attribs[0] }}; <strong>Level</strong> {{ attribs[1] }}; <strong>Price</strong> {{ attribs[2] }}
+    {% if item.versions %}
+    {% for version in item.versions %}
+    <hr>
+    <p>
+        <strong>Type</strong> {{ version.name }};
+        <strong>Level</strong> {{ version.level }};
+        <strong>Price</strong> {{ version.price }}
     </p>
-    <p>{{ attribs[3] }} </p>
+    <p>{{ version.description }} </p>
     {% endfor %}
     {% endif %}
 

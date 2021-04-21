@@ -19,16 +19,5 @@ The resulting item is pretty basic. It's really just the **Antidote** elixir but
 ## New Alchemical Elixir
 
 <div class="pathfinder-back">
-{% include pf2-item.html
-    name="Charcoal Philter"
-    level="1+"
-    traits="alchemical, consumable, elixir"
-    usage="held in 1 hand"
-    bulk="L"
-    activate=":a: Interact"
-    content="A charcoal philter protects your lungs from deleterious effect. Upon consuming a charcoal philter, you gain an item bonus to Fortitude saving throws against any effects with the olfactory or inhaled trait for 6 hours."
-    versions="Lesser, 1, 3 gp, You gain a +2 item bonus. | 
-    Moderate, 6, 35 gp, You gain a +3 item bonus. | 
-    Greater, 10, 160 gp, You gain a +4 item bonus."
-%}
+{% include pf2-item.html item=site.data.items.charcoal-philter %}
 </div>
