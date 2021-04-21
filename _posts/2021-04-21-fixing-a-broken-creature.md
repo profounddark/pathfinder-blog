@@ -22,21 +22,25 @@ Sure, that's just the high end of the range. But, it's pretty **extreme**, espec
 
 Did I mention that their Armor Class was also *high* to *extreme* for their level?
 
-After one battle with these monsters, I quickly decided that they were hot garbage and decidedd to do something a bit more reasonable.
+After one battle with these monsters, I quickly decided that they were hot garbage and decided to do something a bit more reasonable.
 
 ## Trying Something Different
 
-My big issue was that, as written, this creature (basically, a basic warrior) was extremely deadly but wasn't especially interesting. On its turn, it enters a Rage and start hitting for *too much damage*. Maybe it uses its shield, or maybe it just kills its enemies before they get a chance to attack. A creature who's sole function is "kill PCs in one hit" isn't super fun in my book, especially when that crushing damage potential isn't obvious when the battle starts.
+My big issue was that, as written, this creature (in essence, a basic warrior) was extremely deadly but wasn't especially interesting. On its turn, it enters a Rage and starts hitting for *too much damage*. Maybe it uses its shield, or maybe it just kills its enemies before they get a chance to attack. In my experience, a creature who's sole function is "kill PCs in one hit" isn't super fun for GMs or players, especially when that crushing damage potential isn't obvious when the battle starts. "Suprise! You've been killed!"
 
 With that in mind, I had two goals:
 * Fix the damage expression to be less outrageous; and
 * Do something a bit more interesting with the Rage.
 
-First thing first, I renamed the creature. <creature>Corrupted Retainer</creature> may have been compelling at first, but given that everything in the Hermitage is a *corrupted* something, I thought the name got boring quickly. Besides, these people were so inspired by demons that they gave up their faith in order to worship demons. To that end, I decided to call them <creature>Vile Aspirants</creature>. What can I say, I was inspired by a thesaurus.
+First thing first, I renamed the creature. <creature>Corrupted Retainer</creature> may have been a cool name when they started writing the module, but given that everything in the Hermitage is a *corrupted* something, I thought the name got boring quickly. Nobody wants to see "a Corrupted Retainer, a Corrupted Priest, and a Corrupted Lizard." Besides, this was supposed to be a hermitage full of people that gave up their faith in order to worship demons. With that bit of fluff in mind, I decided to call them <creature>Vile Aspirants</creature>.
 
-For the damage expression, I just grabbed the *high* damage expression for level 2from the GameMastery Guide (1d10+4) and tweaked it to make it look more like a trident (1d8+5). Why *high* instead of **ExTReMe**? Because I'm not a sadist. But, I also liked the idea that the <creature>vile aspirant</creature> wouldn't be too powerful... at least at first.
+What can I say, I was inspired by a thesaurus.
 
-Regarding the Rage, I had a simple idea. These guys wouldn't start out raging. At first, they're more defensive, using their shields to increase their AC and block damage. But, once they get hurt enough, they lose their cool and fly into a rage, ditching their shield and dealing extra damage.
+For the damage expression, I just grabbed the *high* damage expression for level 2 from the GameMastery Guide (1d10+4) and tweaked it to make it look more like a trident (1d8+5), as I can appreciate the idea that the same weapon should sort of look the same, no matter who uses it. That means I wanted to stick with the standard Trident d8. Of course, you may wonder why the *high* damage expression instead of **ExTReMe**?
+
+Because I'm not a sadist.
+
+But, also, there's still the Rage. I liked the idea that this monster started only mostly threatening but then **became** really threatening. Regarding the Rage, I had a simple idea. At first, these creatures are more defensive, using their shields to increase their AC and block damage. But, once they get hurt enough, they lose their cool and fly into a rage, ditching their shield and dealing extra the damage.
 
 To accomplish this, I fell back on an old D&D 4E standby: **Bloodied**.
 
@@ -47,7 +51,7 @@ D&D 4E described Bloodied as:
 
 On its own, Bloodied doesn't mean anything. However, certain abilities or reactions can trigger off of a creature being Bloodied. In the alternative, some abilities are only available if the creature is (or is not) Bloodied.
 
-In my mind, "the first time the creature became Bloodied" seemed like a great opportunity to trigger the rage. At this point, it gives up on defense, ditches its shield, and goes on the full offensive. However, the change is obvious to the players, so they realize that it is important for them to defeat this enemy before he unleashes his full assault.
+In my mind, "the first time the creature became Bloodied" seemed like a great opportunity to trigger the rage. At this point, it gives up on defense, ditches its shield, and goes on the full offensive. However, the change is obvious to the players, so they realize that it is important for them to defeat this enemy before it can drop the bigger damage on them.
 
 As this was my first attempt at really messing with the Pathfinder 2E rules and system, I didn't go too crazy with this. I just mostly used the Rage ability as written, but changed it from an action to a free action that triggered on the <creature>vile aspirant</creature> first being bloodied in battle.
 
