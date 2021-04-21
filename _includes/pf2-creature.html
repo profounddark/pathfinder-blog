@@ -8,16 +8,16 @@
 
     {% include pf2-traits.html traits=creature.traits %}
 
-    <p><strong>Perception</strong> {{ creature.perception }}
+    <p><strong>Perception</strong> {% include parse-bonus.html bonus=creature.perception %}
         {%- if creature.senses -%}
         ; {{ creature.senses }}
         {%- endif -%}
     </p>
-    
+
     {% if creature.languages %}
     <p><strong>Languages</strong> {{ creature.languages }}</p>
     {% endif %}
-    
+
     {% if creature.skills %}
     <p><strong>Skills</strong> {{ creature.skills }}</p>
     {% endif %}
@@ -31,11 +31,23 @@
         <strong>Cha</strong> {% include parse-bonus.html bonus=creature.attributes.cha %}
     </p>
 
+    {% if creature.items %}
+    <p><strong>Items</strong> {{ creature.items }}</p>
+    {% endif %}
+
     {% for ability in creature.passive %}
     <p>
         <strong>{% include parse-symbols.html text=ability.name %}</strong>
-        {{ ability.traits }}
-        {{ ability.effect }}
+        {% if ability.traits %}
+        ({{ ability.traits }})
+        {% endif %}
+        {% if ability.trigger %}
+        <strong>Trigger</strong> {{ ability.trigger }}
+        {% endif %}
+        {% if ability.effect %}
+        <strong>Effect</strong> {{ ability.effect }}
+        {% endif %}
+        {{ ability.description }}
     </p>
     {% endfor %}
 
@@ -50,6 +62,9 @@
 
     <p>
         <strong>HP</strong> {{ creature.hp | default: "12" }}
+        {% if creature.bloodied -%}
+        (Bloodied {{ creature.bloodied }})
+        {%- endif -%}
         {%- if creature.weakness -%}
         ; <strong>Weaknesses</strong> {{ creature.weakness }}
         {%- endif -%}
@@ -58,8 +73,16 @@
     {% for ability in creature.defense %}
     <p>
         <strong>{% include parse-symbols.html text=ability.name %}</strong>
-        {{ ability.traits }}
-        {{ ability.effect }}
+        {% if ability.traits %}
+        ({{ ability.traits }})
+        {% endif %}
+        {% if ability.trigger %}
+        <strong>Trigger</strong> {{ ability.trigger }}
+        {% endif %}
+        {% if ability.effect %}
+        <strong>Effect</strong> {{ ability.effect }}
+        {% endif %}
+        {{ ability.description }}
     </p>
     {% endfor %}
 
@@ -103,11 +126,19 @@
     {% endfor %}
 
     {% for ability in creature.offense %}
-        <p>
-            <strong>{% include parse-symbols.html text=ability.name %}</strong>
-            {{ ability.traits }}
-            {{ ability.effect }}
-        </p>
+    <p>
+        <strong>{% include parse-symbols.html text=ability.name %}</strong>
+        {% if ability.traits %}
+        ({{ ability.traits }})
+        {% endif %}
+        {% if ability.trigger %}
+        <strong>Trigger</strong> {{ ability.trigger }}
+        {% endif %}
+        {% if ability.effect %}
+        <strong>Effect</strong> {{ ability.effect }}
+        {% endif %}
+        {{ ability.description }}
+    </p>
     {% endfor %}
 
 </div>

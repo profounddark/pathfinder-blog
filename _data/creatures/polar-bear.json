@@ -40,11 +40,11 @@
     "offense": [
         {
             "name": "Sneak Attack",
-            "effect": "The polar bear's Strikes deal an additional 1d6 precision damage to flat-footed creatures."
+            "description": "The polar bear's Strikes deal an additional 1d6 precision damage to flat-footed creatures."
         },
         {
             "name": "Mauler",
-            "effect": "The polar bear gains a +3 circumstance bonus to damage rolls against reatures it has grabbed."
+            "description": "The polar bear gains a +3 circumstance bonus to damage rolls against reatures it has grabbed."
         }
     ]
 }

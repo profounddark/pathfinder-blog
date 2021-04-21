@@ -22,7 +22,7 @@
     "passive": [
         {
             "name": "Scent Demons",
-            "effect": "A bebilith can smell demons as a precise sense."
+            "description": "A bebilith can smell demons as a precise sense."
         }
     ],
     "ac": 30,
@@ -62,20 +62,20 @@
     "offense": [
         {
             "name": "Divine Innate Spells",
-            "effect": "DC 29; <strong>7th</strong> <em>plane shift</em> (self only)"
+            "description": "DC 29; <strong>7th</strong> <em>plane shift</em> (self only)"
         },
         {
             "name": "Abyssal Rot",
             "traits": "disease, necromancy",
-            "effect": "The drained condition from Abyssal rot is cumulative, to a maximum of drained 4; <strong>Saving Throw</strong> DC 29 Fortitude; <strong>Maximum Damage</strong> 6 rounds; <strong>Stage 1</strong> 3d6 negative damage (1 round); <strong>Stage 2</strong> 3d6 negative damage and drained 1 (1 round); <strong>Stage 3</strong> 3d6 negative damage and drained 2 (1 round)."
+            "description": "The drained condition from Abyssal rot is cumulative, to a maximum of drained 4; <strong>Saving Throw</strong> DC 29 Fortitude; <strong>Maximum Damage</strong> 6 rounds; <strong>Stage 1</strong> 3d6 negative damage (1 round); <strong>Stage 2</strong> 3d6 negative damage and drained 1 (1 round); <strong>Stage 3</strong> 3d6 negative damage and drained 2 (1 round)."
         },
         {
             "name": "Dimensional Tether",
-            "effect": "A creature hit by the bebilith's web Strike is restrained and tehtered to the beilith, preventing it from moving further away from the bebilith. The restrained creature is also under the effects of a <em>dimensional anchor</em> spell (DC 29) with a duration that lasts as long as the creature remains tethered. The bebilith can have only one creature tethered at a time. The DC to Escape or FOrce Open the tether is 29. The tether can be severed with a Strike (AC 20, Hardness 2, HP 20); this ends the <em>dimensional anchor</em> effect but does not free the restrained creature."
+            "description": "A creature hit by the bebilith's web Strike is restrained and tehtered to the beilith, preventing it from moving further away from the bebilith. The restrained creature is also under the effects of a <em>dimensional anchor</em> spell (DC 29) with a duration that lasts as long as the creature remains tethered. The bebilith can have only one creature tethered at a time. The DC to Escape or FOrce Open the tether is 29. The tether can be severed with a Strike (AC 20, Hardness 2, HP 20); this ends the <em>dimensional anchor</em> effect but does not free the restrained creature."
         },
         {
             "name": "Penetrating Strike",
-            "effect": "Against demons, a bebilith's Strikes count as cold iron and good."
+            "description": "Against demons, a bebilith's Strikes count as cold iron and good."
         }
     ]
 }
