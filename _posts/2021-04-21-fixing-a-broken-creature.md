@@ -14,7 +14,7 @@ One creature in this adventure path that gave me pause was the <creature>Corrupt
 
 My initial concern with the creature is that it was built as a [Barbarian](https://2e.aonprd.com/Classes.aspx?ID=2), so it has a [Rage action](https://2e.aonprd.com/Actions.aspx?ID=3). The creature even has a rage-only ability, [No Escape](https://2e.aonprd.com/Feats.aspx?ID=137). All of this signals that this creature should rage **as soon as possible**. But, this only exacerbates what would become my major concern: the melee attack.
 
-The <creature>Corrupted Retainer</creature> has melee attack with a +11 to hit (*high* for a creature of that level) that deals 2d8+2 piercing (*extreme*, on average, for a creature of that level). With the rage, this becomes 2d8+4 (almost extreme for a **3rd level creature**). But, more than that, it has the *fatal d10* trait, which means that on a critical hit, it rolls d10s instead of d8s AND rolls an additional d10. That is to say, on a critical success, this creature deals even **MORE** damage, within the range of 12 to 58 damage.
+The <creature>Corrupted Retainer</creature> has melee attack with a +11 to hit (*high* for a creature of that level) that deals 2d8+2 piercing (*extreme*, on average, for a creature of that level). With the rage, this becomes 2d8+4 (almost extreme for a **3rd level creature**). But, more than that, it has the *fatal d10* trait, which means that on a critical success, it rolls d10s instead of d8s AND rolls an additional d10. That is to say, on a critical success, this creature deals even **MORE** damage, within the range of 12 to 58 damage.
 
 **58 damage!!! At level 2!**
 
