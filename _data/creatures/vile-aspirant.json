@@ -25,7 +25,7 @@
             "name": "Tainted Rage :f:",
             "traits": "rage",
             "trigger": "The vile aspirant is Bloodied for the first time in the battle;",
-            "effect": "The vile aspirant enters a rage and gains 6 temporary Hit Points for 1 minute. While raging, the vile aspirant deals +2 additional damage with melee weapon and unarmed attacks, has a -1 penalty to AC, and cannot <action>Raise a Shield</action> or use actions that have the concentrate trait."
+            "effect": "The vile aspirant enters a rage and gains 6 temporary Hit Points for 1 minute. While raging, the vile aspirant deals +2 additional damage with melee weapon and unarmed attacks, has a -1 penalty to AC, and cannot <action>Raise a Shield</action>, <action>Shield Block</action>, or use actions that have the concentrate trait."
         }
     ],
     "ac": 18,
@@ -53,7 +53,7 @@
     "offense": [
         {
             "name": "Raise a Shield :a:",
-            "description": "The vile aspirant raises their shield, granting a +2 circumstance bonus to AC until the start of their next turn."
+            "description": "The vile aspirant raises their shield, granting a +2 circumstance bonus to AC. The shield remains raised until the start of their next turn."
         }
     ]
 }

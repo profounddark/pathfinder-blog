@@ -1,0 +1,7 @@
+{
+  "name": "Aquatic Shield",
+  "level": 5,
+  "traits": ["azarketi"],
+  "prereq": "Hydraulic Deflection",
+  "description": "Your ability to manipulate small amounts of water has improved dramatically, allowing you to coalesce a large shield of water to aid in your defense. When you use <action>Hydraulic Deflection</action>, increase the circumstance bonus to AC to +2."
+}

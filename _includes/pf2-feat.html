@@ -1,28 +1,29 @@
 <div class="pathfinder-block">
+    {% assign feat = include.feat %}
     <div class="title-line">
-        <h3>{{ include.name | default: "Feat Name" | replace: ":a:", "<span class='pf2-symbol'>1</span>" | replace: ":aa:", "<span class='pf2-symbol'>2</span>" | replace: ":f:", "<span class='pf2-symbol'>f</span>"}}</h3>
-        <h3>Feat {{ include.level | default: 1 }}</h3>
+        <h3>{% include parse-symbols.html text=feat.name %}</h3>
+        <h3>Feat {{ feat.level | default: 1 }}</h3>
     </div>
     <hr>
 
-    {% include pf2-traits.html traits=include.traits %}
+    {% include pf2-traits.html traits=feat.traits %}
 
-    {% if include.prereq %}
-    <p><strong>Prerequisite</strong> {{ include.prereq }}</p>
+    {% if feat.prereq %}
+    <p><strong>Prerequisite</strong> {{ feat.prereq }}</p>
     {% endif %}
 
-    {% if include.trigger %}
-    <p><strong>Trigger</strong> {{ include.trigger }}</p>
+    {% if feat.trigger %}
+    <p><strong>Trigger</strong> {{ feat.trigger }}</p>
     {% endif %}
 
-    {% if include.trigger or include.prereq %}
+    {% if feat.trigger or feat.prereq %}
     <hr>
     {% endif %}
 
-    {%- assign content-blocks = include.content | split: "/n" -%}
+    {%- assign content-blocks = feat.description | split: "/n" -%}
     <div class="content">
         {%- for block in content-blocks -%}
-        <p>{{ block | replace: ":a:", "<span class='pf2-symbol'>1</span>" | replace: ":r:", "<span class='pf2-symbol'>r</span>"}}</p>
+        <p>{% include parse-symbols.html text=block %}</p>
         {%- endfor -%}
     </div>
 

@@ -47,7 +47,7 @@ To accomplish this, I fell back on an old D&D 4E standby: **Bloodied**.
 ## Reacting When You're Bloodied
 
 D&D 4E described Bloodied as:
-> The bloodied value of a typical creature equals one-half its maximum hit points. A creature is bloodied when its currnet hit points drop to its bloodied value or lower.
+> The bloodied value of a typical creature equals one-half its maximum hit points. A creature is bloodied when its current hit points drop to its bloodied value or lower.
 
 On its own, Bloodied doesn't mean anything. However, certain abilities or reactions can trigger off of a creature being Bloodied. In the alternative, some abilities are only available if the creature is (or is not) Bloodied.
 
