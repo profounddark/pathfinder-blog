@@ -1,6 +1,8 @@
 ---
 layout: post
 author: andrew
+title: Fixing a Broken Creature
+date: 2021-04-21
 excerpt: "After having a very negative experience with a monster in an official Pathfinder 2E Adventure Path, I thought I'd take a moment to build something new that would work better while keeping things interesting."
 ---
 
@@ -14,7 +16,7 @@ One creature in this adventure path that gave me pause was the <creature>Corrupt
 
 My initial concern with the creature is that it was built as a [Barbarian](https://2e.aonprd.com/Classes.aspx?ID=2), so it has a [Rage action](https://2e.aonprd.com/Actions.aspx?ID=3). The creature even has a rage-only ability, [No Escape](https://2e.aonprd.com/Feats.aspx?ID=137). All of this signals that this creature should rage **as soon as possible**. But, this only exacerbates what would become my major concern: the melee attack.
 
-The <creature>Corrupted Retainer</creature> has melee attack with a +11 to hit (*high* for a creature of that level) that deals 2d8+2 piercing (*extreme*, on average, for a creature of that level). With the rage, this becomes 2d8+4 (almost extreme for a **3rd level creature**). But, more than that, it has the *fatal d10* trait, which means that on a critical success, it rolls d10s instead of d8s AND rolls an additional d10. That is to say, on a critical success, this creature deals even **MORE** damage, within the range of 12 to 58 damage.
+The <creature>Corrupted Retainer</creature> has melee attack with a \+11 to hit (*high* for a creature of that level) that deals 2d8\+2 piercing (*extreme*, on average, for a creature of that level). With the rage, this becomes 2d8+4 (almost extreme for a **3rd level creature**). But, more than that, it has the *fatal d10* trait, which means that on a critical success, it rolls d10s instead of d8s AND rolls an additional d10. That is to say, on a critical success, this creature deals even **MORE** damage, within the range of 12 to 58 damage.
 
 **58 damage!!! At level 2!**
 
@@ -36,7 +38,7 @@ First thing first, I renamed the creature. <creature>Corrupted Retainer</creatur
 
 What can I say, I was inspired by a thesaurus.
 
-For the damage expression, I just grabbed the *high* damage expression for level 2 from the GameMastery Guide (1d10+4) and tweaked it to make it look more like a trident (1d8+5), as I can appreciate the idea that the same weapon should sort of look the same, no matter who uses it. That means I wanted to stick with the standard Trident d8. Of course, you may wonder why the *high* damage expression instead of **ExTReMe**?
+For the damage expression, I just grabbed the *high* damage expression for level 2 from the GameMastery Guide (1d10\+4) and tweaked it to make it look more like a trident (1d8\+5), as I can appreciate the idea that the same weapon should sort of look the same, no matter who uses it. That means I wanted to stick with the standard Trident d8. Of course, you may wonder why the *high* damage expression instead of **ExTReMe**?
 
 Because I'm not a sadist.
 

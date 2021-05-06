@@ -1,6 +1,8 @@
 ---
 layout: post
 author: andrew
+title: Dealing with a Stinky Situation
+date: 2021-04-19
 excerpt: "Playing through the second official Adventure Path for Pathfinder 2E, I discovered that I needed a custom item to fill an obvious need that came up. Here, I present a simple alchemical item designed to supplement characters in situations with odorous monsters."
 ---
 

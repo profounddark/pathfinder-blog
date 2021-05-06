@@ -1,6 +1,8 @@
 ---
 layout: post
 author: andrew
+title: A Watery Shield Of My Own
+date: 2021-04-23
 excerpt: "An alternative to the Azarketi Feat Hydraulic Deflection, with the intention of giving it a bit more utility and making it more comparable to other, existing Ancestry Feats."
 ---
 
