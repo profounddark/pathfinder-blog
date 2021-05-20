@@ -5,6 +5,18 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-variant: small-caps;
+    margin: 1rem 0 0 0;
+}
+
+subtitle {
+    display: block;
+    margin: 0 0 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 nav {
     background-color: black;
     padding: 0rem;
@@ -77,6 +89,10 @@ h1 {
 img.image-right {
     width: 50%;
     float:right;
+}
+
+img.image-center {
+    width: 100%;
 }
 
 .post-list {
