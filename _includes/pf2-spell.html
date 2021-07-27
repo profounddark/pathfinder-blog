@@ -1,0 +1,70 @@
+{% comment %}
+spell.name = string, Name of the spell
+spell.category = string, Spell, Cantrip, or Focus, default to "Spell"
+spell.level = number, Level of the spell (usually, 1-9), default to 1
+---
+spell.traditions = array of strings; required
+spell.cast = casting time, usually a string; required
+spell.range = string, optional
+spell.targets = string, optional
+
+---
+spell.heightened = array of objects
+.level = string, paramter in ()
+.effect = text description
+{% endcomment %}
+<div class="pathfinder-block">
+    {% assign spell = include.spell %}
+    <div class="title-line">
+        <h3>{% include parse-symbols.html text=spell.name %}</h3>
+        <h3>{{ spell.category | default: "Spell" }} {{ spell.level | default: 1 }}</h3>
+    </div>
+    <hr>
+
+    {% include pf2-traits.html traits=spell.traits %}
+
+    <p><strong>Traditions </strong>
+        {%- for tradition in spell.traditions -%}
+        {{ tradition }}
+        {%- if forloop.last == false -%}, {% endif %}
+        {%- endfor -%}
+    </p>
+
+    <p><strong>Cast</strong> {% include parse-symbols.html text=spell.cast %}</p>
+
+    {% if spell.range or spell.targets %}
+    <p><strong>Range</strong> {{ spell.range }}; <strong>Targets</strong> {{ spell.targets }}</p>
+    {% endif %}
+
+    {% if spell.saving-throw or spell.duration %}
+    <p>
+        {% if spell.saving-throw %}
+        <strong>Saving Throw</strong> {{ spell.saving-throw }}
+        {%- endif -%}
+        {%- if spell.saving-throw and spell.duration -%}
+        ;
+        {% endif %}
+        {% if spell.duration %}
+        <strong>Duration</strong> {{spell.duration }}
+        {% endif %}
+    </p>
+    {% endif %}
+
+
+
+    <hr>
+
+    {%- assign content-blocks = spell.description | split: "/n" -%}
+    <div class="content">
+        {%- for block in content-blocks -%}
+        <p>{% include parse-symbols.html text=block %}</p>
+        {%- endfor -%}
+    </div>
+    {% if spell.heightened %}
+    <hr>
+    {% for height in spell.heightened %}
+    <p><strong>Heightened ({{ height.level }})</strong> {{ height.effect }}</p>
+    {% endfor %}
+    {% endif %}
+
+</div>

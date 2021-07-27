@@ -3,6 +3,28 @@
   src: url("../fonts/Pathfinder2eActions.ttf");
 }
 
+action {
+  font-weight: bold;
+  font-style: italic;
+}
+
+feat {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+item {
+  font-weight: bold;
+}
+
+skill {
+  font-weight: bold;
+}
+
+spell {
+  font-style: italic;
+}
+
 .pf2-symbol {
   font-family: "Pathfinder-Font";
   font-size: 120%;
@@ -10,7 +32,7 @@
 }
 
 .pathfinder-back {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   background-image: url("../images/background.jpg");
   border: 0.1rem solid black;
 }
@@ -28,6 +50,7 @@
   font-size: 1.4rem;
   padding-top: 0.1rem;
   font-weight: bold;
+  font-style: normal;
   margin: 0;
   display: inline-block;
 }
@@ -55,23 +78,17 @@
   padding: 0;
 }
 
-action {
-  font-weight: bold;
-  font-style: oblique;
+div.pathfinder-block action,
+div.pathfinder-block feat,
+div.pathfinder-block item,
+div.pathfinder-block skill,
+div.pathfinder-block spell {
+  font-weight: inherit;
+  font-style: inherit;
+  text-transform: inherit;
 }
 
-spell {
+div.pathfinder-block .free-text spell {
+  text-transform: lowercase;
   font-style: italic;
-}
-
-skill {
-  font-style: bold;
-}
-
-feat {
-  font-weight: bold;
-}
-
-item {
-  font-weight: bold;
 }

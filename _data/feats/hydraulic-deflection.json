@@ -2,5 +2,5 @@
   "name": "Hydraulic Deflection :a:",
   "level": 1,
   "traits": ["abjuration", "azarketi", "concentrate", "primal", "water"],
-  "description": "Drawing moisture from the atmosphere, you create a disc of hovering water that deflects attacks. This has the effects of a primal <spell>Shield</spell> cantrip, except it loses the force trait and gains the water trait. This cantrip is heightened to a spell level equal to half your level rounded up."
+  "description": "Drawing moisture from the atmosphere, you create a disc of hovering water that deflects attacks. This has the effects of a primal Shield cantrip, except it loses the force trait and gains the water trait. This cantrip is heightened to a spell level equal to half your level rounded up."
 }

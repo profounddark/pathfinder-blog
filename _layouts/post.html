@@ -4,4 +4,33 @@ layout: default
 <h1>{{ page.title }}</h1>
 <subtitle>Posted on {{ page.date | date_to_string }}</subtitle>
 
+{% for action in site.data.tagged-items.action %}
+{%- capture tagged-action -%}
+<action>{{ action }}</action>
+{%- endcapture -%}
+{% assign content = content | replace: action, tagged-action %}
+{% endfor %}
+
+{% for feat in site.data.tagged-items.feat %}
+{%- capture tagged-feat -%}
+<feat>{{ feat }}</feat>
+{%- endcapture -%}
+{% assign content = content | replace: feat, tagged-feat %}
+{% endfor %}
+
+
+{% for skill in site.data.tagged-items.skill %}
+{%- capture tagged-skill -%}
+<skill>{{ skill }}</skill>
+{%- endcapture -%}
+{% assign content = content | replace: skill, tagged-skill %}
+{% endfor %}
+
+{% for spell in site.data.tagged-items.spell %}
+{%- capture tagged-spell -%}
+<spell>{{ spell }}</spell>
+{%- endcapture -%}
+{% assign content = content | replace: spell, tagged-spell %}
+{% endfor %}
+
 {{ content }}

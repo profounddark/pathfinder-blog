@@ -1,59 +1,54 @@
 {
-    "name": "Vile Aspirant",
-    "creature-type": "Soldier",
-    "level": 2,
-    "traits": [
-        "ne",
-        "medium",
-        "human",
-        "humanoid"
-    ],
-    "perception": 6,
-    "languages": "Common",
-    "skills": "Athletics +8, Survival +7",
-    "attributes": {
-        "str": 4,
-        "dex": 1,
-        "con": 3,
-        "int": 0,
-        "wis": 2,
-        "cha": 0
-    },
-    "items": "trident, hide armor, wooden shield",
-    "passive": [
-        {
-            "name": "Tainted Rage :f:",
-            "traits": "rage",
-            "trigger": "The vile aspirant is Bloodied for the first time in the battle;",
-            "effect": "The vile aspirant enters a rage and gains 6 temporary Hit Points for 1 minute. While raging, the vile aspirant deals +2 additional damage with melee weapon and unarmed attacks, has a -1 penalty to AC, and cannot <action>Raise a Shield</action>, <action>Shield Block</action>, or use actions that have the concentrate trait."
-        }
-    ],
-    "ac": 18,
-    "saves": {
-        "fort": 10,
-        "ref": 8,
-        "will": 5
-    },
-    "hp": 32,
-    "bloodied": 16,
-    "defense": [
-        {
-            "name": "Shield Block :r:",
-            "description": "(Hardness 3, HP 12, BT 6)"
-        }
-    ],
+  "name": "Vile Aspirant",
+  "creature-type": "Soldier",
+  "level": 2,
+  "traits": ["ne", "medium", "human", "humanoid"],
+  "perception": 6,
+  "languages": "Common",
+  "skills": "Athletics +8, Survival +7",
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": "trident, hide armor, wooden shield",
+  "passive": [
+    {
+      "name": "Tainted Rage :f:",
+      "traits": "rage",
+      "trigger": "The vile aspirant is Bloodied for the first time in the battle;",
+      "effect": "The vile aspirant enters a rage and gains 6 temporary Hit Points for 1 minute. While raging, the vile aspirant deals +2 additional damage with melee weapon and unarmed attacks, has a -1 penalty to AC, and cannot <action>Raise a Shield</action>, <action>Shield Block</action>, or use actions that have the concentrate trait."
+    }
+  ],
+  "ac": 18,
+  "saves": {
+    "fort": 10,
+    "ref": 8,
+    "will": 5
+  },
+  "hp": 32,
+  "bloodied": 16,
+  "defense": [
+    {
+      "name": "Shield Block :r:",
+      "description": "(Hardness 3, HP 12, BT 6)"
+    }
+  ],
 
-    "speed": "25 feet",
-    "melee": [
-        {
-            "attack": "trident +11",
-            "damage": "1d8+5 piercing"
-        }
-    ],
-    "offense": [
-        {
-            "name": "Raise a Shield :a:",
-            "description": "The vile aspirant raises their shield, granting a +2 circumstance bonus to AC. The shield remains raised until the start of their next turn."
-        }
-    ]
+  "speed": "25 feet",
+  "melee": [
+    {
+      "attack": "trident +11",
+      "damage": "1d8+5 piercing"
+    }
+  ],
+  "offense": [
+    {
+      "name": "Raise a Shield :a:",
+      "description": "The vile aspirant raises their shield, granting a +2 circumstance bonus to AC. The shield remains raised until the start of their next turn."
+    }
+  ]
 }

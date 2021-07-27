@@ -1,0 +1,11 @@
+{
+  "name": "Skeleton Key",
+  "category": "Cantrip",
+  "level": 1,
+  "traits": ["transmutation"],
+  "traditions": ["arcane", "occult"],
+  "cast": ":aa: somatic, verbal",
+  "range": "5 feet",
+  "targets": "1 door, lock, or container",
+  "description": "Using magical force, you delicately manipulate the mechanisms of a lock. You can attempt to Pick a Lock of target door, lock, or container using your spell attack roll instead of a Thievery check."
+}

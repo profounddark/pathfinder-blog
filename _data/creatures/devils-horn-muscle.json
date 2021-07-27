@@ -1,0 +1,39 @@
+{
+  "name": "Devil's Horn Muscle",
+  "creature-type": "Soldier",
+  "level": 1,
+  "traits": ["ne", "medium", "human", "humanoid"],
+  "perception": 6,
+  "languages": "Common",
+  "skills": "Athletics +8, Intimidation +4, Kintargo Lore +2",
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": -1,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": "stout truncheon, leather armor",
+  "ac": 18,
+  "saves": {
+    "fort": 8,
+    "ref": 7,
+    "will": 4
+  },
+  "hp": 24,
+  "bloodied": 12,
+  "speed": "25 feet",
+  "melee": [
+    {
+      "attack": "stout truncheon +11",
+      "damage": "1d6+4 bludgeoning"
+    }
+  ],
+  "offense": [
+    {
+      "name": "Smash 'em as they Fall :r:",
+      "description": "<strong>Trigger</strong> A creature adjacent to the Devil's Horn Muscle is tripped or knocked prone; <strong>Effect</strong> The Devil's Horn Muscle can make a Strike against the triggering creature."
+    }
+  ]
+}

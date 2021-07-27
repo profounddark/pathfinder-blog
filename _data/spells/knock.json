@@ -1,0 +1,10 @@
+{
+  "name": "Knock",
+  "level": 2,
+  "traits": ["transmutation"],
+  "traditions": ["arcane", "occult"],
+  "cast": ":aa: somatic, verbal",
+  "range": "5 feet",
+  "targets": "1 door, lock, or container",
+  "description": "While you have this spell prepared, you may attempt to <action>Pick a Lock</action> of target door, lock, or container using your spell attack roll instead of a <skill>Thievery</skill> check. This does not expend the spell./nAs a free action, you may expend this spell after making a check to <action>Pick a Lock</action> using this spell to grant a +4 status bonus to that check./n<spell>Knock</spell> counteracts <spell>lock</spell>."
+}

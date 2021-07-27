@@ -1,0 +1,10 @@
+{
+  "name": "Telekinetic Maneuver",
+  "level": 2,
+  "traits": ["attack", "evocation", "force"],
+  "traditions": ["arcane", "occult"],
+  "cast": ":aa: somatic, verbal",
+  "range": "60 feet",
+  "targets": "1 creature",
+  "description": "With a rush of telekinetic power, you move a foe or something they carry. While you have this spell prepared, you can attempt to <action>Disarm</action>, <action>Shove</action>, or <action>Trip</action> an adjacent target using a spell attack roll instead of an Athletics check. /nYou may expend this spell to target a creature within the full range of the spell."
+}

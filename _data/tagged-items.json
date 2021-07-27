@@ -1,0 +1,42 @@
+{
+  "action": ["Disable a Device", "Pick a Lock"],
+  "feat": [
+    "Acrobatic Performer",
+    "Arcane Tattoos",
+    "First World Magic",
+    "Halo",
+    "Healer’s halo",
+    "Hydraulic Deflection",
+    "Mariner’s Fire",
+    "Natural medicine",
+    "Shrouded Magic",
+    "Storm’s Lash"
+  ],
+  "skill": [
+    "Acrobatics",
+    "Arcana",
+    "Athletics",
+    "Crafting",
+    "Deception",
+    "Diplomacy",
+    "Intimidation",
+    "Lore",
+    "Medicine",
+    "Nature",
+    "Occultism",
+    "Performance",
+    "Religion",
+    "Society",
+    "Stealth",
+    "Survival",
+    "Thievery"
+  ],
+  "spell": [
+    "Ghost Sound",
+    "Knock",
+    "Know Direction",
+    "Mage Hand",
+    "Shield",
+    "Telekinetic Maneuver"
+  ]
+}

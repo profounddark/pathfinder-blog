@@ -1,3 +1,12 @@
+{% comment %}
+feat.name = string, Name of the spell
+feat.level = number, Level of the spell (usually, 1-9), default to 1
+feat.traits = array of strings, traits of the feat
+---
+feat.prereq = string, prerequsitite text for the feat
+feat.trigger = string, trigger for the feat action
+feat.description = string, the feat text
+{% endcomment %}
 <div class="pathfinder-block">
     {% assign feat = include.feat %}
     <div class="title-line">
@@ -9,11 +18,11 @@
     {% include pf2-traits.html traits=feat.traits %}
 
     {% if feat.prereq %}
-    <p><strong>Prerequisite</strong> {{ feat.prereq }}</p>
+    <p class="free-text"><strong>Prerequisite</strong> {{ feat.prereq }}</p>
     {% endif %}
 
     {% if feat.trigger %}
-    <p><strong>Trigger</strong> {{ feat.trigger }}</p>
+    <p class="free-text"><strong>Trigger</strong> {{ feat.trigger }}</p>
     {% endif %}
 
     {% if feat.trigger or feat.prereq %}
@@ -21,10 +30,9 @@
     {% endif %}
 
     {%- assign content-blocks = feat.description | split: "/n" -%}
-    <div class="content">
+    <div class="content free-text">
         {%- for block in content-blocks -%}
         <p>{% include parse-symbols.html text=block %}</p>
         {%- endfor -%}
     </div>
-
 </div>

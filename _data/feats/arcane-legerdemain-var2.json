@@ -1,0 +1,7 @@
+{
+  "name": "Arcane Legerdemain",
+  "level": 1,
+  "traits": ["general", "skill"],
+  "prereq": "trained in Thievery, ability to cast arcane or occult spells",
+  "description": "You have mastered the ability to make fine manipulations using magical prowess. You can attempt the Pick a Lock action using your spell attack roll instead of Thievery check."
+}
