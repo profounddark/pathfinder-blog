@@ -1,0 +1,7 @@
+{
+  "name": "Quick Swimmer",
+  "level": 5,
+  "traits": ["elf"],
+  "prereq": "aquatic elf heritage",
+  "description": "Your swim faster than most any other aquatic elf. Your swim speed increases to 30 feet."
+}

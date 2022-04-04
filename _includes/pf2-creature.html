@@ -1,3 +1,13 @@
+{% comment %}
+creature.name = string, Name of the creature
+creature.creature-type = string, Type of the creature (listed before its level), defaults to Creature
+creature.level = number, Level of the creature, default to 1
+creature.traits = array of strings, traits of the creatures
+---
+
+MORE STUFF
+
+{% endcomment %}
 <div class="pathfinder-block">
     {% assign creature = include.creature %}
     <div class="title-line">
@@ -15,11 +25,11 @@
     </p>
 
     {% if creature.languages %}
-    <p><strong>Languages</strong> {{ creature.languages }}</p>
+    <p><strong>Languages</strong> {{ creature.languages | join: ", " }}</p>
     {% endif %}
 
     {% if creature.skills %}
-    <p><strong>Skills</strong> {{ creature.skills }}</p>
+    <p><strong>Skills</strong> {{ creature.skills | sort_natural | join: ", "}}</p>
     {% endif %}
 
     <p>
@@ -32,11 +42,11 @@
     </p>
 
     {% if creature.items %}
-    <p><strong>Items</strong> {{ creature.items }}</p>
+    <p class="free-text"><strong>Items</strong> {{ creature.items }}</p>
     {% endif %}
 
     {% for ability in creature.passive %}
-    <p>
+    <p class="free-text">
         <strong>{% include parse-symbols.html text=ability.name %}</strong>
         {% if ability.traits %}
         ({{ ability.traits }})
@@ -54,7 +64,7 @@
     <hr>
 
     <p>
-        <strong>AC</strong> {{ creature.ac | default: "10" }};
+        <strong>AC</strong> {{ creature.ac | default: "10" | append: creature.ac-note | default: "" }};
         <strong>Fort</strong> {% include parse-bonus.html bonus=creature.saves.fort %},
         <strong>Ref</strong> {% include parse-bonus.html bonus=creature.saves.ref %},
         <strong>Will</strong> {% include parse-bonus.html bonus=creature.saves.will %}
@@ -126,7 +136,7 @@
     {% endfor %}
 
     {% for ability in creature.offense %}
-    <p>
+    <p class="creature free-text">
         <strong>{% include parse-symbols.html text=ability.name %}</strong>
         {% if ability.traits %}
         ({{ ability.traits }})

@@ -1,0 +1,8 @@
+{
+  "name": "Deepwater Sight",
+  "level": 1,
+  "traits": ["elf"],
+  "prereq": "aquatic elf heritage",
+  "description": "Your eyes have adapted to the great stygian abyss of the ocean. You gain dark vision.",
+  "special": "You can select this feat only at 1st level, and you can't retrain into or out of this feat."
+}

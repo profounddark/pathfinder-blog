@@ -2,7 +2,7 @@
   "name": "Skeleton Key",
   "category": "Cantrip",
   "level": 1,
-  "traits": ["transmutation"],
+  "traits": ["uncommon", "transmutation"],
   "traditions": ["arcane", "occult"],
   "cast": ":aa: somatic, verbal",
   "range": "5 feet",

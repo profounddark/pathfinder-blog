@@ -1,8 +1,15 @@
 {
-  "action": ["Disable a Device", "Pick a Lock"],
+  "action": [
+    "Cast a Spell",
+    "Disable a Device",
+    "Pick a Lock",
+    "Recall Knowledge"
+  ],
   "feat": [
     "Acrobatic Performer",
+    "Arcane Legerdemain",
     "Arcane Tattoos",
+    "Distance Legerdemain",
     "First World Magic",
     "Halo",
     "Healer’s halo",
@@ -32,11 +39,26 @@
     "Thievery"
   ],
   "spell": [
-    "Ghost Sound",
+    "ACID SPLASH",
+    "ADMONISHING RAY",
+    "COLOR SPRAY",
+    "DETECT MAGIC",
+    "ELECTRIC ARC",
+    "GALE BLAST",
+    "GENIE'S VEIL",
+    "GHOST SOUND",
+    "GUIDANCE",
+    "ILLUSORY DISGUISE",
     "Knock",
     "Know Direction",
+    "LIGHT",
+    "MAGE ARMOR",
     "Mage Hand",
-    "Shield",
-    "Telekinetic Maneuver"
+    "Message",
+    "PUMMELING RUBBLE",
+    "PRESTIDIGITATION",
+    "SHIELD",
+    "Telekinetic Maneuver",
+    "TRUE STRIKE"
   ]
 }

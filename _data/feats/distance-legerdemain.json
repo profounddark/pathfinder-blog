@@ -1,0 +1,7 @@
+{
+  "name": "Distance Legerdemain",
+  "level": 4,
+  "traits": ["uncommon", "general", "evocation", "skill"],
+  "prereq": "Arcane Legerdemain, Expert proficiency in the magic tradition that allows you to cast the Mage Hand cantrip",
+  "description": "Your expertise with Mage Hand has increased. You can use the Mage Hand cantrip to attempt to Pick a Lock or Disable a Device up to the range of your Mage Hand cantrip, but you take a -5 penalty to the check if the lock or device is greater than 5 feet away from you./nIf you're a master in the magic tradition with which you cast Mage Hand, this is reduced to a -2 penalty. If you're legendary in the magic tradition, you take no penalty."
+}

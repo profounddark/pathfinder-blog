@@ -1,0 +1,72 @@
+{
+  "name": "Rexus Victocora",
+  "level": 2,
+  "traits": ["unique", "ng", "human", "humanoid"],
+  "perception": 5,
+  "languages": [
+    "Common",
+    "Celestial",
+    "Draconic",
+    "Elven",
+    "Infernal",
+    "Strix"
+  ],
+  "skills": [
+    "Arcana +7",
+    "Deception +8",
+    "Diplomacy +8",
+    "Occultism +7",
+    "Society +7",
+    "Stealth +5",
+    "Loremaster Lore +7"
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 1,
+    "con": 0,
+    "int": 3,
+    "wis": 1,
+    "cha": 4
+  },
+  "items": "stout cane (staff), noble outfit, Victocora signet ring, elixir of life (minor, 3)",
+  "passive": [
+    {
+      "name": "Aspiring Archivist",
+      "description": "May use <skill>Loremaster Lore</skill> in place of any other Lore skill, but only to Recall Knowledge."
+    }
+  ],
+  "ac": 15,
+  "ac-note": " (16 with <em>shield</em> active)",
+  "saves": {
+    "fort": 4,
+    "ref": 5,
+    "will": 7
+  },
+  "hp": 20,
+  "speed": "25 feet",
+  "melee": [
+    {
+      "attack": "stout cane +4",
+      "traits": "two-hand d8",
+      "damage": "1d4 bludgeoning"
+    }
+  ],
+  "offense": [
+    {
+      "name": "Arcane Spontaneous Spells",
+      "description": "DC 18, attack +8; <strong>1st</strong> (four slots) ADMONISHING RAY, COLOR SPRAY, ILLUSORY DISGUISE<sup>BL</sup>, PUMMELING RUBBLE; <strong>Cantrips</strong> ACID SPLASH, DETECT MAGIC<sup>BL</sup>, GALE BLAST, LIGHT, SHIELD"
+    },
+    {
+      "name": "Bloodline Spells",
+      "description": "1 Focus Point, DC 18; <strong>1st</strong> GENIE'S VEIL"
+    },
+    {
+      "name": "Destined Blood Magic",
+      "description": "When Rexus casts his bloodline spell or any spell from his list of granted bloodline spells, he gains a destined aura that grants him a +1 status bonus to saving throws until the start of his next turn."
+    },
+    {
+      "name": ":a: Widen Spell",
+      "description": "If the next action Rexus uses is to Cast a Spell that has an area of a cone and does not have a duration, add 5 feet to the length of the cone."
+    }
+  ]
+}

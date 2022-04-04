@@ -88,6 +88,10 @@ div.pathfinder-block spell {
   text-transform: inherit;
 }
 
+div.pathfinder-block .creature.free-text {
+  text-indent: -1rem;
+  padding-left: 1rem;
+}
 div.pathfinder-block .free-text spell {
   text-transform: lowercase;
   font-style: italic;

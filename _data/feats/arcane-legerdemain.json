@@ -1,7 +1,7 @@
 {
   "name": "Arcane Legerdemain",
-  "level": 3,
-  "traits": ["general", "evocation", "skill"],
-  "prereq": "Trained in Thievery, ability to cast the Mage Hand cantrip",
-  "description": "You have honed your skills with Mage Hand to enable fine manipulation of small objects. You can use the Mage Hand cantrip to attempt to Pick a Lock or Disable a Device, adding your spellcasting ability modifier to your Thievery check instead of your Dexterity modifier."
+  "level": 2,
+  "traits": ["uncommon", "general", "evocation", "skill"],
+  "prereq": "eldritch trickster racket, ability to cast the Mage Hand cantrip",
+  "description": "You have honed your skills with Mage Hand to enable fine manipulation of small objects. You can use the Mage Hand cantrip to attempt to Pick a Lock or Disable a Device, adding your spellcasting ability modifier to your Thievery check instead of your Dexterity modifier. The target lock or device must be within 5 feet of you."
 }

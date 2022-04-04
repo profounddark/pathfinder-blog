@@ -5,7 +5,9 @@ feat.traits = array of strings, traits of the feat
 ---
 feat.prereq = string, prerequsitite text for the feat
 feat.trigger = string, trigger for the feat action
+feat.freq = string, trigger for the feat action
 feat.description = string, the feat text
+feat.special = string, a special warning at the end
 {% endcomment %}
 <div class="pathfinder-block">
     {% assign feat = include.feat %}
@@ -30,9 +32,12 @@ feat.description = string, the feat text
     {% endif %}
 
     {%- assign content-blocks = feat.description | split: "/n" -%}
-    <div class="content free-text">
+    <div class="content feat free-text">
         {%- for block in content-blocks -%}
         <p>{% include parse-symbols.html text=block %}</p>
         {%- endfor -%}
     </div>
+    {% if feat.special %}
+    <p class="free-text"><strong>Special</strong> {{ feat.special }}</p>
+    {% endif %}
 </div>

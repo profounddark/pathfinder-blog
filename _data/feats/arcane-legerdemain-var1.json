@@ -1,7 +1,7 @@
 {
   "name": "Arcane Legerdemain",
   "level": 1,
-  "traits": ["general", "skill"],
+  "traits": ["uncommon", "general", "skill"],
   "prereq": "Trained in Arcana or Occultism",
   "description": "You have mastered the ability to make fine manipulations using magical prowess. You can roll an Arcana or Occultism check instead of a Thievery check when using the Pick a Lock action."
 }
