@@ -1,5 +1,7 @@
 $font-stack:    Trebuchet MS, Ariel, sans-serif;
 
+@import 'figures';
+
 body {
     font: 100% $font-stack;
     margin: 0;
@@ -54,8 +56,9 @@ ul {
 
 
 .mainframe {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto 2.5rem auto;
+    padding: 0 1.0rem;
 }
 
 .mainframe a {
@@ -86,15 +89,6 @@ h1 {
     text-align:center;
 }
 
-img.image-right {
-    width: 50%;
-    float:right;
-}
-
-img.image-center {
-    width: 100%;
-}
-
 .post-list {
     list-style-type: none;
 }
@@ -102,3 +96,4 @@ img.image-center {
 blockquote {
     font-family:'Courier New', Courier, monospace;
 }
+

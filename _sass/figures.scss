@@ -1,0 +1,21 @@
+figure {
+    margin: 0 0.5rem 0.25rem;
+}
+
+figure.image-right {
+    width: 50%;
+    float: right;
+}
+
+figure.image-center {
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    text-align: center;
+}

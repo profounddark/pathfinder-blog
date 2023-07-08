@@ -1,0 +1,41 @@
+{
+  "name": "Strongheart Tincture",
+  "level": "1+",
+  "traits": ["uncommon", "alchemical", "consumable", "elixir"],
+  "usage": "held in 1 hand",
+  "bulk": "L",
+  "activate": ":a: Interact",
+  "description": "While some elixirs try to cure harm, this tincture is intended to prevent the harm from occurring. Upon drinking this elixir, you gain the listed number of Temporary Hit Points and gain an item bonus to saving throws against effects with the death trait for 10 minutes.",
+  "versions": [
+    {
+      "name": "Minor",
+      "level": 1,
+      "price": "4 gp",
+      "description": "You gain 5 temporary Hit Points and the item bonus is +1."
+    },
+    {
+      "name": "Lesser",
+      "level": 5,
+      "price": "30 gp",
+      "description": "You gain 10 temporary Hit Points and the item bonus is +1."
+    },
+    {
+      "name": "Moderate",
+      "level": 9,
+      "price": "140 gp",
+      "description": "You gain 20 temporary Hit Points and the item bonus is +2."
+    },
+    {
+      "name": "Greater",
+      "level": 13,
+      "price": "550 gp",
+      "description": "You gain 30 temporary Hit Points and the item bonus is +3."
+    },
+    {
+      "name": "Major",
+      "level": 17,
+      "price": "2,500 gp",
+      "description": "You gain 50 temporary Hit Points and the item bonus is +4."
+    }
+  ]
+}
