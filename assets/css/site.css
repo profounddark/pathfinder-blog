@@ -1,9 +1,4 @@
-$font-stack:    Trebuchet MS, Ariel, sans-serif;
-
-@import 'figures';
-
 body {
-    font: 100% $font-stack;
     margin: 0;
 }
 
@@ -39,7 +34,7 @@ nav a:hover {
     color: black;
 }
 
-.current {    
+.current {
     color: lightgreen;
 }
 
@@ -67,7 +62,7 @@ ul {
 
 .mainframe a:hover {
     color: lightgreen;
-    background-color:black;
+    background-color: black;
 }
 
 .post-summary h3 {
@@ -86,7 +81,7 @@ a {
 }
 
 h1 {
-    text-align:center;
+    text-align: center;
 }
 
 .post-list {
@@ -94,6 +89,5 @@ h1 {
 }
 
 blockquote {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
-

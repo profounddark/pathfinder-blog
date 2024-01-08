@@ -1,14 +1,18 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
-  </head>
-  <body>
-    {% include navigation.html %}
-    <div class="mainframe">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <!-- <link rel="stylesheet" href="{{ " /assets/css/styles.css" | relative_url }}"> -->
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+
+<body>
+  {% include navigation.html %}
+  <div class="mainframe">
     {{ content }}
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
