@@ -1,0 +1,30 @@
+/* Colors for the website */
+
+:root {
+    --main-bg-color: white;
+    --main-text-color: black;
+    
+    --navbar-bg-color: black;
+    --navbar-text-color: white;
+    --navbar-current-text-color: rgb(50, 200, 50);
+
+    @media (prefers-color-scheme: dark) {
+        --main-text-color: white;
+        --main-bg-color: rgb(33,33,33);
+
+        --navbar-bg-color: white;
+        --navbar-text-color: rgb(33, 33, 33);
+    }
+}
+
+/*          || Custom Fonts             */
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Pathfinder-Font";
+    src: url("../fonts/Pathfinder2eActions.ttf");
+}
