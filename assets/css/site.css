@@ -1,6 +1,6 @@
 @import url(./fonts-and-colors.css);
 
-/*          || Main Settings             */
+/*          || Main Settings                */
 body {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
@@ -12,8 +12,24 @@ a {
     text-decoration: none;
 }
 
-/*          || Navigation Menu          */
+ul {
+    padding: 0;
+}
 
+li {
+    list-style: none;
+}
+
+/*          || CSS for the main frame       */
+
+.mainframe {
+    max-width: 1000px;
+    margin: 0 auto 2.5rem auto;
+    padding: 0 1.0rem;
+}
+
+
+/*          || Navigation Menu              */
 
 nav {
     background-color: var(--navbar-bg-color);
@@ -42,3 +58,10 @@ nav a:hover {
 nav a.current:hover {
     background-color: var(--navbar-current-text-color);
 }
+
+/*          || Post Listing on Front        */
+
+ul li>*>* {
+    padding-left: 5rem;
+}
+
